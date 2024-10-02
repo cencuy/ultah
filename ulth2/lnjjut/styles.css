@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.cake {
+    position: relative;
+    width: 200px;
+    height: 150px;
+    background: #f7d0c2; /* Warna kue */
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.frosting {
+    position: absolute;
+    top: -20px;
+    left: 0;
+    right: 0;
+    height: 20px;
+    background: #ff7f50; /* Warna frosting */
+    border-radius: 15px 15px 0 0;
+}
+
+.base {
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 15px;
+    background: #c97c7c; /* Warna dasar kue */
+    border-radius: 0 0 15px 15px;
+}
+
+.candle {
+    position: absolute;
+    bottom: 100px;
+    width: 10px;
+    height: 30px;
+    background: #ffcc00; /* Warna lilin */
+    border-radius: 5px;
+}
+
+#candle1 {
+    left: 40px;
+}
+
+#candle2 {
+    left: 90px;
+}
+
+#candle3 {
+    left: 140px;
+}
+
+.flame {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #ff4500; /* Warna api */
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#flame1 {
+    left: 43px;
+    bottom: 120px;
+}
+
+#flame2 {
+    left: 93px;
+    bottom: 120px;
+}
+
+#flame3 {
+    left: 143px;
+    bottom: 120px;
+}
